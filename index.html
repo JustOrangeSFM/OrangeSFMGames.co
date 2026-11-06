@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Orange SFM Games</title>
+<style>
+  html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: Arial, sans-serif;
+    touch-action: none;
+    user-select: none;
+  }
+
+  .title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 40px 16px 16px;
+  }
+
+  .wrap {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .wrap img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(100vh - 180px);
+    -webkit-mask-image: radial-gradient(ellipse at center, #000 60%, transparent 100%);
+    mask-image: radial-gradient(ellipse at center, #000 60%, transparent 100%);
+  }
+
+  @media (max-width: 480px) {
+    .title { font-size: 28px; padding: 28px 12px 12px; }
+    .wrap { padding: 16px; }
+    .wrap img { max-height: calc(100vh - 130px); }
+  }
+</style>
+</head>
+<body>
+  <div class="title">Orange SFM Games</div>
+  <div class="wrap">
+    <img src="2027.jpg" alt="">
+  </div>
+</body>
+</html>
